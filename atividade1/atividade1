@@ -20,7 +20,7 @@ def soma_dos_digitos():
     return soma
 
 def main():
-    # Recebendo as temperaturas
+
     print("Informe a temperatura mínima e máxima do dia:")
     
     temp_min = None
@@ -31,16 +31,13 @@ def main():
     while temp_max is None:
         temp_max = validar_entrada_temperatura()
     
-    # Calculando a média e a variação
     media, variacao = calcular_media_e_variacao(temp_max, temp_min)
     print(f"A média das temperaturas é: {media:.2f}°C")
     print(f"A variação entre as temperaturas é: {variacao:.2f}°C")
     
-    # Soma dos dígitos de um número informado pelo usuário
     soma = soma_dos_digitos()
     if soma is not None:
         print(f"A soma dos dígitos do número informado é: {soma}")
 
-# Executando o programa
 if __name__ == "__main__":
     main()
